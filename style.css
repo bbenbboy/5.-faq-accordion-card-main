@@ -1,0 +1,137 @@
+:root {
+  --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%);
+  --SoftRed: hsl(14, 88%, 65%);
+  --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --LightGrayishBlue: hsl(240, 5%, 91%);
+}
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  background: rgb(101, 101, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 101, 231, 1) 35%,
+    rgba(173, 103, 233, 1) 100%
+  );
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+.faq {
+  width: 75%;
+  margin: auto 20px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.card-contents {
+  display: relative;
+  line-height: 20px;
+  width: 100%;
+}
+dt {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--DarkGrayishBlue);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+dt:hover {
+  color: var(--SoftRed);
+}
+
+dd {
+  margin: 10px 0;
+  color: var(--DarkGrayishBlue);
+  transition: 0.5sec linear;
+}
+
+.arrow-down {
+  width: 10px;
+  height: 10px;
+  margin: auto 0;
+}
+hr {
+  margin: 20px 0;
+  color: var(--LightGrayishBlue);
+  border: 0.5px solid;
+}
+
+/* Javascript */
+.active {
+  color: black;
+  font-weight: 700;
+}
+.hidden {
+  display: none;
+  transition: 0.5sec ease-in;
+}
+.hover {
+  color: var(--SoftRed);
+}
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+/* Image */
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-pattern {
+  position: absolute;
+  left: -550px;
+  top: -190px;
+  width: auto;
+}
+.img-desktop {
+  position: relative;
+  left: -60px;
+  top: 150px;
+  width: 100%;
+}
+.img-box-desktop {
+  position: absolute;
+  top: 280px;
+  left: -100px;
+  z-index: 10;
+}
+
+@media only screen and(max-width: 800px) {
+}
+/* .img {
+  position: relative;
+  overflow: hidden;
+}
+.img-pattern {
+  left: -230px;
+  top: 0;
+  width: 100%;
+}
+.img-desktop {
+  left: -80px;
+  top: -300px;
+  width: 100%;
+}
+.img-box-desktop {
+  position: fixed;
+  top: 280px;
+  left: -160px;
+  z-index: 3;
+} */
