@@ -1,14 +1,9 @@
 "user strict";
 
-const hidden = document.querySelector(".hidden");
-const active = document.querySelector(".active");
-const hover = document.querySelector(".hover");
-const rotateArrow = document.querySelector(".rotate-arrow");
+const faqClick = document.querySelectorAll(".contents-container");
 
-const faqHover = document.querySelectorAll("faqHover dt");
-const contents = document.querySelectorAll(".contents dd");
-const arrowDown = document.querySelectorAll(".arrow-down");
-
-function click() {
-    faqHover.
-}
+faqClick.forEach((faq) => {
+  faq.addEventListener("click", function () {
+    faq.classList.toggle("active");
+  });
+});
