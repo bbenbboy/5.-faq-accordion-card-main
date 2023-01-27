@@ -31,8 +31,8 @@ Quite simple and easy to make, first I have a problem with javascript but found 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/bbenbboy/5.-faq-accordion-card-main.git)
+- Live Site URL: [Add live site URL here](https://5-faq-accordion-card-main-sand.vercel.app/)
 
 ## My process
 
